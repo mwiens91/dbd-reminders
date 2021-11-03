@@ -125,12 +125,12 @@ def main():
         # Build the subject string
         if perks_to_notify_about:
             if tweets:
-                subject = ("Dead by Daylight codes and perks available!",)
+                subject = "Dead by Daylight codes and perks available!"
             else:
-                subject = ("Dead by Daylight perks available!",)
+                subject = "Dead by Daylight perks available!"
         else:
             if tweets:
-                subject = ("Dead by Daylight codes available!",)
+                subject = "Dead by Daylight codes available!"
             else:
                 subject = ""
 

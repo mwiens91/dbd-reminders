@@ -1,7 +1,6 @@
 """Contains cache file related things."""
 
 import os.path
-import sys
 from schema import And, Schema
 import yaml
 from dbdreminders.codes import get_codes

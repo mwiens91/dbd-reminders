@@ -1,7 +1,6 @@
 """Contains configuration file related things."""
 
 import os.path
-import sys
 from schema import And, Schema
 import yaml
 from dbdreminders.constants import (

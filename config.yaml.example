@@ -1,0 +1,26 @@
+# dbd-reminders config file
+
+# This config file is looked for at
+#
+# repository_base/config.yaml
+
+# Twitter dev platform token
+twitter-api-key: "p0gch4mp101fy451do9uod1s1x9i4a"
+twitter-api-key-secret: "itqb0thqi5cek18ae6ekm7pbqvh63k"
+
+# Gmail login
+gmail-username: "username@gmail.com"
+gmail-password: "hunter2"
+
+# Users: for the perk names consult
+# https://deadbydaylight.fandom.com/wiki/Perks
+users:
+  - email: user1@email.com
+    notify-about-codes: true
+    perks-to-notify-about:
+      - "Mettle of Man"
+      - "Hex: Blood Favour"
+  - email: user2@email.com
+    notify-about-codes: false
+    perks-to-notify-about:
+      - "Barbecue & Chilli"

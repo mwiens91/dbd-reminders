@@ -59,8 +59,8 @@ def parse_config_file() -> dict[str, str]:
     # Build the schema for the config file, and validate what we have
     schema = Schema(
         {
-            "gmail-username": And(str, len),
-            "gmail-password": And(str, len),
+            "gmail-email": And(str, len),
+            "gmail-app-password": And(str, len),
             "twitter-api-key": And(str, len),
             "twitter-api-key-secret": And(str, len),
             "users": [

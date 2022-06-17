@@ -137,8 +137,8 @@ def main():
         # Send the email if there's anything to send
         if message:
             send_email(
-                config_dict["gmail-username"],
-                config_dict["gmail-password"],
+                config_dict["gmail-email"],
+                config_dict["gmail-app-password"],
                 [user_dict["email"]],
                 subject,
                 message,

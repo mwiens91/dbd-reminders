@@ -8,9 +8,9 @@
 twitter-api-key: "p0gch4mp101fy451do9uod1s1x9i4a"
 twitter-api-key-secret: "itqb0thqi5cek18ae6ekm7pbqvh63k"
 
-# Gmail login
-gmail-username: "username@gmail.com"
-gmail-password: "hunter2"
+# Gmail login info
+gmail-email: "username@gmail.com"
+gmail-app-password: "hunter2"
 
 # Users: for the perk names consult
 # https://deadbydaylight.fandom.com/wiki/Perks

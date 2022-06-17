@@ -3,7 +3,7 @@
 
 # dbd-reminders
 
-This app is for [Dead by
+This app ships useful email reminders to [Dead by
 Daylight](https://store.steampowered.com/app/381210/Dead_by_Daylight/)
 players. It has two components: one is to email you when perks that you
 care about are available in the [Shrine of
@@ -13,16 +13,14 @@ or charms (these codes are pulled from the
 [@DBDcodeReminder](https://twitter.com/DBDcodeReminder) Twitter
 account).
 
-This is written for Linux/Unix systems, and I recommend running it every
+This is written for Linux/Unix systems. I recommend running it every
 24 hours on a cron job or having a script run it every 24 hours on
-something like [PythonAnywhere](https://www.pythonanywhere.com) if you
-don't have a spare "always-on" server to run this on.
-
-This app remembers what codes or perks it has already notified about, so
+something like [PythonAnywhere](https://www.pythonanywhere.com). This
+app remembers what codes or perks it has already notified about, so
 there's no need to worry about spam messages.
 
-If you want to use this notifier but don't want to set everything up,
-send me an email and I might be able to add your details to my instance.
+If you want to get emails from this notifier but don't want to set
+everything up, send me an email and I might be able to help you out.
 
 ## Installation
 
@@ -41,9 +39,9 @@ Configuration files something look like the following:
 twitter-api-key: "p0gch4mp101fy451do9uod1s1x9i4a"
 twitter-api-key-secret: "itqb0thqi5cek18ae6ekm7pbqvh63k"
 
-# Gmail login
-gmail-username: "username@gmail.com"
-gmail-password: "hunter2"
+# Gmail login info
+gmail-email: "username@gmail.com"
+gmail-app-password: "hunter2"
 
 # Users: for the perk names consult
 # https://deadbydaylight.fandom.com/wiki/Perks
@@ -60,12 +58,15 @@ users:
 ```
 
 You need to set up a Twitter developer account to get a Twitter API key
-and secret (this is really easy: just google it). You also need to set
-up a gmail account from which to send emails (this is also really easy:
-google it). For the `users` part, each user needs an email, a flag to
-specify whether they care about receiving emails about codes, and a list
-for what perks they want to be emailed about. Note that the perk names
-must correspond to the names listed on [this wiki
+and secret. This is simple to do. You also need to set up a Gmail
+account from which to send emails. Note that you must use an "App
+Password" in the above config file for this to work; using an ordinary
+login password will not work.
+
+For the `users` part of the above config, each user needs an email, a
+flag to specify whether they care about receiving emails about codes,
+and a list for what perks they want to be emailed about. Note that the
+perk names should correspond to the names listed on [this wiki
 page](https://deadbydaylight.fandom.com/wiki/Perks).
 
 ### Setting up a configuration file
@@ -81,5 +82,5 @@ Run dbd-reminders directly with
 [run_dbdreminders.py](run_dbdreminders.py):
 
 ```
-./run_twitchgamenotify.py
+./run_dbdreminders.py
 ```
